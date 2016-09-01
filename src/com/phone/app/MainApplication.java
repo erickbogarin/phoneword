@@ -6,7 +6,7 @@ import com.phone.reader.InputNumberReader;
  * Valids input patterns: 
  * eg. 
  * 		55AFZEFA 
- * 		1-800-ACFSF
+ * 		1-800-ACFSFF
  * 
  * @see com.phone.validator.NumberValidator
  * 

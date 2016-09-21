@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/erickbogarin/mixed-phone-number.svg?branch=master)](https://travis-ci.org/erickbogarin/mixed-phone-number)
+[![Build Status](https://travis-ci.org/erickbogarin/phoneword.svg?branch=master)](https://travis-ci.org/erickbogarin/phoneword)
 
 # Phoneword
 

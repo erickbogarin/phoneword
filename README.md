@@ -11,8 +11,8 @@ This project was born from the need to deal with entries of telephone numbers co
 ```java
 String phoneNumber = "55ABCDE";
 
-InputNumberReader reader = new InputNumberReader();
-reader.clear(phoneNumber); // returns 5522233
+PhonewordConverter phoneWord = new PhonewordConverter();
+phoneWord.clear(phoneNumber); // returns 5522233
 ```
 The string is evaluated based on the following two patterns:
 

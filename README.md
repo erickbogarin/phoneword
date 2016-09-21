@@ -12,7 +12,7 @@ This project was born from the need to deal with entries of telephone numbers co
 String phoneNumber = "55ABCDE";
 
 String clean = new PhoneWord().clear(phoneNumber);
-System.out.println(clean) // prints 5522233
+System.out.println(clean); // prints 5522233
 ```
 The string is evaluated based on the following two patterns:
 

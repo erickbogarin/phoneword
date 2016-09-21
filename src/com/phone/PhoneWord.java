@@ -1,4 +1,4 @@
-package com.phone.converter;
+package com.phone;
 
 import com.phone.exception.InvalidNumberException;
 import com.phone.formatter.Formatter;
@@ -11,7 +11,7 @@ import com.phone.validator.Validator;
  * 
  * @author Erick Bogarin
  */
-public final class PhonewordConverter {
+public final class PhoneWord {
 	
 	private final static Validator NUMBER_VALIDATOR = new NumberValidator();
 	private final static Formatter NUMBER_FORMATTER = new NumberFormatter();

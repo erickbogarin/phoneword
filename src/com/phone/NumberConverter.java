@@ -1,4 +1,4 @@
-package com.phone.converter;
+package com.phone;
 
 import java.util.StringJoiner;
 

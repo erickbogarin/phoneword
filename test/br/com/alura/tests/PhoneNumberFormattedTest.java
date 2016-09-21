@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.phone.converter.PhonewordConverter;
+import com.phone.PhoneWord;
 import com.phone.exception.InvalidNumberException;
 
 
@@ -17,11 +17,11 @@ import com.phone.exception.InvalidNumberException;
  */
 public class PhoneNumberFormattedTest {
 
-	PhonewordConverter reader;
+	PhoneWord reader;
 	
 	@Before
 	public void before() {
-		 reader = new PhonewordConverter();
+		 reader = new PhoneWord();
 	}
 	
 	@Test

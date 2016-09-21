@@ -1,6 +1,5 @@
-package com.phone.reader;
+package com.phone.converter;
 
-import com.phone.converter.NumberConverter;
 import com.phone.exception.InvalidNumberException;
 import com.phone.formatter.Formatter;
 import com.phone.formatter.NumberFormatter;
@@ -8,20 +7,20 @@ import com.phone.validator.NumberValidator;
 import com.phone.validator.Validator;
 
 /**
- * Limpa a cadeia (String) de um n�mero telefonico caso este seja v�lido. 
+ * Limpa a cadeia (String) de um numero telefonico caso este seja valido. 
  * 
  * @author Erick Bogarin
  */
-public final class InputNumberReader {
+public final class PhonewordConverter {
 	
 	private final static Validator NUMBER_VALIDATOR = new NumberValidator();
 	private final static Formatter NUMBER_FORMATTER = new NumberFormatter();
 	
-	private String limpa = null;
+	private String clear = null;
 	
-	public String limpa(String telefone) {
-		limpa = clearUp(telefone);
-		return limpa;
+	public String clear(String telefone) {
+		clear = clearUp(telefone);
+		return clear;
 	}
 	
 	/**

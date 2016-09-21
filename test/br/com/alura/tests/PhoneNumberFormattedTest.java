@@ -5,8 +5,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.phone.converter.PhonewordConverter;
 import com.phone.exception.InvalidNumberException;
-import com.phone.reader.InputNumberReader;
 
 
 /**
@@ -17,59 +17,59 @@ import com.phone.reader.InputNumberReader;
  */
 public class PhoneNumberFormattedTest {
 
-	InputNumberReader reader;
+	PhonewordConverter reader;
 	
 	@Before
 	public void before() {
-		 reader = new InputNumberReader();
+		 reader = new PhonewordConverter();
 	}
 	
 	@Test
 	public void deveAceitarNumerosFormatadosContendoNoMinimoNoveDigitos() {
 		String telefone = "1-800-ALURA";
-		assertEquals("180025872", reader.limpa(telefone));
+		assertEquals("180025872", reader.clear(telefone));
 	}
 	
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarNumerosFormatadosMenoresDeNove() {
 		String telefone = "1-800-CASA";
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 	
 	@Test
 	public void deveAceitarNumerosFormatadosContendoAteDezDigitos() {
 		String telefone = "1-800-caelum";
-		assertEquals("1800223586", reader.limpa(telefone));
+		assertEquals("1800223586", reader.clear(telefone));
 	}
 	
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarNumerosFormatadosMaioresQueDez() {
 		String telefone = "1-800-CASADOCODIGO";
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 	
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarNumerosFormatadosComEspacoEmBranco() {
 		String telefone = "1-8 0-ALUR ";
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 	
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarNumerosComFormatoInvalido() {
 		String telefone = "92-80-CAELUM";
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarNumerosNulos() {
 		String telefone = null;
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 	
 	@Test(expected = InvalidNumberException.class)
 	public void deveRejeitarCaracteresInvalidos() {
 		String telefone = "*-8/0-45.45";
-		reader.limpa(telefone);
+		reader.clear(telefone);
 	}
 	
 }

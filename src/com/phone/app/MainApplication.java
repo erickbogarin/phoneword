@@ -1,6 +1,6 @@
 package com.phone.app;
 
-import com.phone.reader.InputNumberReader;
+import com.phone.converter.PhonewordConverter;
 
 /**
  * Valids input patterns: 
@@ -16,10 +16,10 @@ import com.phone.reader.InputNumberReader;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		String phone = "1-800-111111";
+		String phoneNumber = "1-800-111111";
 
-		String limpa = new InputNumberReader().limpa(phone);
-		System.out.println(phone + " => " + limpa);
+		String limpa = new PhonewordConverter().clear(phoneNumber);
+		System.out.println(phoneNumber + " => " + limpa);
 	}
 
 }

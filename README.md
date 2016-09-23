@@ -4,7 +4,7 @@
 
 ![Phoneword](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/250px-Telephone-keypad2.svg.png)
 
-This project was born from the need to deal with entries of telephone numbers containing letters and numbers together, it was therefore required to extract only the telephone number.
+This project was born from the need to deal with entries of telephone numbers containing letters and numbers together.
 
 ## Usage
 

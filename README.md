@@ -16,13 +16,13 @@ System.out.println(clean); // prints 5522233
 ```
 The string is evaluated based on the following two patterns:
 
-#### Formatted pattern
+#### 1. Formatted pattern
 ```js
 // the letter D represents only digits [0-9]
 D-DDD-xxxxx // minimum five x characters
 D-DDD-xxxxxx // maximum six x characters
 ```
-#### Unformatted pattern
+#### 2. Unformatted pattern
 ```js
 // the letter D represents only digits [0-9]
 DDxxxxx // minimum five x characters
